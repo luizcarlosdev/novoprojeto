@@ -92,7 +92,7 @@ header #grouping #social i{
     transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-header button#social-btn1:hover{
+/* header button#social-btn1:hover{
     box-shadow:0px 0px 50px rgb(1, 183, 255);
     border-color: rgb(1, 183, 255) !important;
 }
@@ -117,7 +117,7 @@ header button#social-btn3:hover{
 
 header button#social-btn3 i:hover{
     color: rgb(197, 63, 144) !important;
-}
+} */
 
 header #mode-light{
     display: flex;
@@ -219,6 +219,10 @@ footer{
     background-color: #000;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
 }
 
 footer div#cabecalho-footer{
@@ -226,6 +230,10 @@ footer div#cabecalho-footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+footer div#cabecalho-footer h1{
+    letter-spacing: 2px;
 }
 
 footer div#cabecalho-footer ul{
@@ -246,4 +254,28 @@ footer div#cabecalho-footer img{
     height: 35px;
     width: 35px;
     border-radius: 50%;
+}
+
+footer div#list-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer div#list-footer h2{
+    margin-bottom: 15px;
+}
+
+footer div#list-footer ul{
+    list-style: none;
+}
+
+footer div#list-footer li{
+    margin: 3px;
+}
+
+footer div#list-footer a{
+    text-decoration: none;
+    color: #fff;
 }

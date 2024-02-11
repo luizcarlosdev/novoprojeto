@@ -1,42 +1,44 @@
 @charset "UTF-8";
 
-@media screen and (max-width:768px) {
-    header{
+@media screen and (max-width:600px) {
+    header {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between !important;
         align-items: center;
     }
-    header h1{
+
+    header h1 {
         display: block;
         font-size: 1.8rem;
         align-self: left;
     }
 
-    header div#grouping{
+    header div#grouping {
         display: none;
     }
 
-    header span{
+    header span {
         display: block;
         color: #fff;
     }
 
-    footer #footer-social{
+    footer div#cabecalho-footer{
+        display: flex !important;
         flex-direction: column !important;
+        row-gap: 10px !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
     }
 
-    footer #footer-social li{
-        display: block !important;
-        margin-top: 6px !important;
-        text-align: left !important;
+    footer div#list-footer {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: self-start !important;
     }
 
-    footer #footer-social h1{
-        display: block;
-    }
-
-    footer ul{
-        display: block !important;
+    footer div#list-footer ul{
+        margin: 7px !important;
     }
 }
