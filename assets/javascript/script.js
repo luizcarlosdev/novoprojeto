@@ -1,6 +1,7 @@
 const corpo = document.querySelector("body");
 const main = document.querySelector("main")
-const p = document.querySelectorAll("p")
+const p = document.querySelectorAll("p");
+const h1 = document.querySelectorAll("h1");
 const light = document.querySelector("#buttonl");
 const dark = document.querySelector("#buttond");
 
@@ -35,3 +36,15 @@ function darkmode() {
         p[s].style.color = "#fff"
     }
 }
+
+dark.addEventListener("click",() => {
+    for(let s = 1; s <= (h1.length - 1);s++){
+        h1[s].style.color = "#fff"
+    }
+})
+
+light.addEventListener("click",() => {
+    for(let s = 1; s <= (h1.length - 1 ); s++){
+        h1[s].style.color = "#000"
+    }
+})
