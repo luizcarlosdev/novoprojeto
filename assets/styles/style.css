@@ -134,3 +134,70 @@ header #burger-menu{
     right: 33px;
     font-size: 1.4rem;
 }
+
+div#banner{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background-image: url(../images/img-banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div#banner aside#texto-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.314);
+    filter: opacity(14px);
+    height: 320px;
+    width: 320px;
+    line-height: 320px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-weight: 450;
+    border-radius: 3px;
+}
+
+main{
+    max-width: 1200px;
+    min-width: none;
+    display: block;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    line-height: 2em;
+    padding: 35px;
+}
+
+footer{
+    padding: 40px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+}
+
+footer #footer-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer #footer-social h1{
+    letter-spacing: 2px;
+}
+
+footer #footer-social li{
+    display: inline-block;
+}
+
