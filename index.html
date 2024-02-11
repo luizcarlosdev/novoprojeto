@@ -27,21 +27,34 @@
                 <button id="social-btn2"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></button>
                 <button id="social-btn3"><a href="#"><i class="fa-brands fa-instagram"></i></a></button>
             </div>
-
-            <!-- <div id="mode-light">
-                <button id="light1"><i class="fa-solid fa-toggle-off"></i></button>
-                <button id="light2"><i class="fa-solid fa-toggle-on"></i></button>
-            </div> -->
-
+            
             <div id="login">
                 <a href="#"><button>Login</button></a>
             </div>
 
         </div>
+
         <div id="burger-menu">
             <span onclick="menu()">&#9776</span>
         </div>
+
     </header>
+
+    <aside id="menu-lateral">
+        <div id="bloco-menu"><span onclick="menuout()"><i class="fa-solid fa-x"></i></span>
+        <div id="menu-button">
+            <button onclick="lightmode()" id="buttonl"><i class="fa-solid fa-sun"></i></button>
+            <button onclick="darkmode()" id="buttond"><i class="fa-solid fa-moon"></i></button>
+        </div>
+        </div>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Especialidades</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </aside>
     <div id="banner">
         <aside id="texto-banner"><p></p></aside>
     </div>
@@ -100,5 +113,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>

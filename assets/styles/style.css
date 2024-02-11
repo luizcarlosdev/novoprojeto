@@ -92,53 +92,12 @@ header #grouping #social i{
     transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-/* header button#social-btn1:hover{
-    box-shadow:0px 0px 50px rgb(1, 183, 255);
-    border-color: rgb(1, 183, 255) !important;
-}
-
-header button#social-btn1 i:hover{
-    color: rgb(1, 183, 255) !important;
-}
-
-header button#social-btn2:hover{
-    box-shadow: 0px 0px 50px rgb(0, 136, 255);
-    border-color: rgb(0, 136, 255) !important;
-}
-
-header button#social-btn2 i:hover{
-    color: rgb(0, 136, 255) !important;
-}
-
-header button#social-btn3:hover{
-    box-shadow: 0px 0px 50px rgb(197, 63, 144);
-    border-color: rgb(197, 63, 144) !important;
-}
-
-header button#social-btn3 i:hover{
-    color: rgb(197, 63, 144) !important;
-} */
-
 header #mode-light{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     column-gap: 8px;
-}
-
-header #mode-light button{
-    border: none;
-    background-color: transparent;
-}
-
-header #mode-light i {
-    color: #fff;
-    font-size: 1.5rem;
-}
-
-header #mode-light #light2{
-    display: none;
 }
 
 header div#login button{
@@ -169,6 +128,75 @@ header div#login a{
 
 header #burger-menu{
     font-size: 1.4rem;
+}
+
+aside#menu-lateral{
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 1;
+    width: 0px;
+    height: 100vh;
+    background-color: #000;
+}
+
+aside#menu-lateral #bloco-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    color: #fff;
+}
+
+aside#menu-lateral #bloco-menu #menu-button{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+aside#menu-lateral #bloco-menu #menu-button button{
+    background-color: transparent;
+    border: none;
+}
+
+aside#menu-lateral #bloco-menu #menu-button i{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+aside#menu-lateral #bloco-menu #menu-button #buttonl{
+    display: none;
+}
+
+aside#menu-lateral span i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+aside#menu-lateral ul{
+    padding: 80px 90px;
+    margin-right: 15px;
+}
+
+aside#menu-lateral li{
+    margin: 25px 10px;
+}
+
+aside#menu-lateral a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #beb6b6;
+    letter-spacing: 1px;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+aside#menu-lateral a:hover{
+    color: #fff;
 }
 
 div#banner{
