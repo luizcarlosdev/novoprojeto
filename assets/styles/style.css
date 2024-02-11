@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 32px;
+}
+
+header h1{
+    letter-spacing: 2px;
+}
+
+header ul{
+    list-style: none;
+}
+
+header li{
+    display: inline-block;
+    margin-right: 22px;
+    transition: all 1.2s ease-in;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(136, 136, 139);
+    letter-spacing: 2px;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+header ul li a::after{
+    content: '';
+    background-color: #fff;
+    width: 0px;
+    height: 3px;
+    display: block;
+    margin-top: 6px;
+    transition: 0.7s ease-in-out;
+}
+
+header ul li a:hover::after{
+    width: 60px;
+}
+
+header a:hover{
+    color: #fff;
+}
+
+header #grouping{
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+header #grouping #social{
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 9px;
+}
+
+header #grouping #social button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    border: 0.5px solid rgb(156, 146, 146);
+    text-align: center;
+    padding: 4px 5px;
+}
+
+header #grouping #social i{
+    font-size: 1.1rem;
+    text-align: center;
+    color: #fff;
+}
+
+header #mode-light{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+
+header #mode-light button{
+    border: none;
+    background-color: transparent;
+}
+
+header #mode-light i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+header #mode-light #light2{
+    display: none;
+}
+
+header div#login button{
+    background-color: rgb(0, 123, 255);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 5px 14px;
+    color: #fff;
+}
+
+header div#login a{
+    color: #fff;
+}
+
+header #burger-menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 33px;
+    font-size: 1.4rem;
+}
