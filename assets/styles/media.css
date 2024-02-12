@@ -25,7 +25,7 @@
 
     div#banner{
         height: 200px !important;
-        background-position: top center;
+        background-position: bottom center;
     }
 
     footer div#cabecalho-footer{

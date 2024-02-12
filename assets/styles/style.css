@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+    width: 100%;
+}
+
 header {
     background-color: #000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -39,20 +44,6 @@ header a {
     transition-duration: 0.5s;
     transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
-
-/* header ul li a::after{
-    content: '';
-    background-color: #fff;
-    width: 0px;
-    height: 3px;
-    display: block;
-    margin-top: 6px;
-    transition: 0.7s ease-in-out;
-}
-
-header ul li a:hover::after{
-    width: fit-content;
-} */
 
 header a:hover {
     color: #fff;
@@ -251,6 +242,7 @@ main {
     font-size: 1rem;
     line-height: 2em;
     padding: 35px;
+    overflow: hidden;
 }
 
 main h1,
@@ -263,8 +255,10 @@ h6 {
 }
 
 main img {
+    display: block;
+    margin: auto;
     width: 100%;
-    object-Fit: fill;
+    object-Fit: contain;
 }
 
 main p {
