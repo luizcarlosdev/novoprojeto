@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     background-color: #000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
@@ -17,21 +17,21 @@ header{
     padding: 32px;
 }
 
-header h1{
+header h1 {
     letter-spacing: 2px;
 }
 
-header ul{
+header ul {
     list-style: none;
 }
 
-header li{
+header li {
     display: inline-block;
     margin-right: 22px;
     transition: all 1.2s ease-in;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: rgb(136, 136, 139);
     letter-spacing: 2px;
@@ -54,11 +54,11 @@ header ul li a:hover::after{
     width: fit-content;
 } */
 
-header a:hover{
+header a:hover {
     color: #fff;
 }
 
-header #grouping{
+header #grouping {
     display: flex;
     flex-direction: row;
     column-gap: 25px;
@@ -66,7 +66,7 @@ header #grouping{
     align-items: center;
 }
 
-header #grouping #social{
+header #grouping #social {
     display: flex;
     flex-direction: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ header #grouping #social{
     column-gap: 9px;
 }
 
-header #grouping #social button{
+header #grouping #social button {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -84,7 +84,7 @@ header #grouping #social button{
     padding: 4px 5px;
 }
 
-header #grouping #social i{
+header #grouping #social i {
     font-size: 1.1rem;
     text-align: center;
     color: #fff;
@@ -92,7 +92,7 @@ header #grouping #social i{
     transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-header #mode-light{
+header #mode-light {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -100,7 +100,7 @@ header #mode-light{
     column-gap: 8px;
 }
 
-header div#login button{
+header div#login button {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
@@ -114,23 +114,23 @@ header div#login button{
     transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-header div#login button:hover{
+header div#login button:hover {
     background-color: #fff;
     color: #000;
     border: none;
 }
 
-header div#login a{
+header div#login a {
     color: #fff;
     transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-header #burger-menu{
+header #burger-menu {
     font-size: 1.4rem;
 }
 
-aside#menu-lateral{
+aside#menu-lateral {
     position: fixed;
     top: 0;
     right: 0;
@@ -141,7 +141,7 @@ aside#menu-lateral{
     background-color: #000;
 }
 
-aside#menu-lateral #bloco-menu{
+aside#menu-lateral #bloco-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -150,42 +150,42 @@ aside#menu-lateral #bloco-menu{
     color: #fff;
 }
 
-aside#menu-lateral #bloco-menu #menu-button{
+aside#menu-lateral #bloco-menu #menu-button {
     display: flex;
     flex-direction: row;
     column-gap: 15px;
 }
 
-aside#menu-lateral #bloco-menu #menu-button button{
+aside#menu-lateral #bloco-menu #menu-button button {
     background-color: transparent;
     border: none;
 }
 
-aside#menu-lateral #bloco-menu #menu-button i{
+aside#menu-lateral #bloco-menu #menu-button i {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-aside#menu-lateral #bloco-menu #menu-button #buttonl{
+aside#menu-lateral #bloco-menu #menu-button #buttonl {
     display: none;
 }
 
-aside#menu-lateral span i{
+aside#menu-lateral span i {
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-aside#menu-lateral ul{
+aside#menu-lateral ul {
     padding: 80px 90px;
     margin-right: 15px;
 }
 
-aside#menu-lateral li{
+aside#menu-lateral li {
     margin: 25px 10px;
 }
 
-aside#menu-lateral a{
+aside#menu-lateral a {
     text-decoration: none;
     font-size: 1.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -195,11 +195,21 @@ aside#menu-lateral a{
     transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-aside#menu-lateral a:hover{
+aside#menu-lateral a:hover {
     color: #fff;
 }
 
-div#banner{
+aside#menu-lateral #button-lateral button {
+    padding: 5px 12px;
+    background-color: rgb(0, 102, 255);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+div#banner {
     position: relative;
     width: 100%;
     height: 420px;
@@ -210,11 +220,11 @@ div#banner{
     background-position: center center;
 }
 
-div#banner aside#texto-banner{
+div#banner aside#texto-banner {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 1;
     color: white;
     background-color: rgba(0, 0, 0, 0.314);
@@ -231,7 +241,7 @@ div#banner aside#texto-banner{
     border-radius: 3px;
 }
 
-main{
+main {
     max-width: 1200px;
     min-width: none;
     display: block;
@@ -243,15 +253,25 @@ main{
     padding: 35px;
 }
 
-main h1,h2,h3,h4,h5,h6{
+main h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 20px 0px;
 }
 
-main p{
+main img {
+    width: 100%;
+    object-Fit: fill;
+}
+
+main p {
     text-align: justify;
 }
 
-footer{
+footer {
     background-color: #000;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -261,64 +281,64 @@ footer{
     padding: 30px;
 }
 
-footer div#cabecalho-footer{
+footer div#cabecalho-footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-footer div#cabecalho-footer h1{
+footer div#cabecalho-footer h1 {
     letter-spacing: 2px;
     color: #fff !important;
 }
 
-footer div#cabecalho-footer ul{
+footer div#cabecalho-footer ul {
     list-style: none;
 }
 
-footer div#cabecalho-footer li{
+footer div#cabecalho-footer li {
     display: inline;
     margin-right: 5px;
 }
 
-footer div#cabecalho-footer a{
+footer div#cabecalho-footer a {
     text-decoration: none;
     color: #fff;
 }
 
-footer div#cabecalho-footer img{
+footer div#cabecalho-footer img {
     height: 35px;
     width: 35px;
     border-radius: 50%;
 }
 
-footer div#list-footer{
+footer div#list-footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-footer div#list-footer h2{
+footer div#list-footer h2 {
     margin-bottom: 15px;
 }
 
-footer div#list-footer ul{
+footer div#list-footer ul {
     list-style: none;
 }
 
-footer div#list-footer li{
+footer div#list-footer li {
     margin: 3px;
 }
 
-footer div#list-footer a{
+footer div#list-footer a {
     text-decoration: none;
     color: #ada3a3;
     transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-footer div#list-footer a:hover{
+footer div#list-footer a:hover {
     color: #fff;
 }

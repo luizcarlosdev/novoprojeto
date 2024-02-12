@@ -21,11 +21,11 @@
     header span {
         display: block;
         color: #fff;
-        background-position: bottom !important;
     }
 
     div#banner{
         height: 200px !important;
+        background-position: top center;
     }
 
     footer div#cabecalho-footer{
@@ -71,10 +71,38 @@
         display: block;
         color: #fff;
     }
+
+    main img{
+        height: 550px ;
+    }
+
+    
+    footer div#cabecalho-footer{
+        display: flex !important;
+        flex-direction: row !important;
+        row-gap: 10px !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+    }
+
+    footer div#list-footer {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: self-start !important;
+    }
+
+    footer div#list-footer ul{
+        margin: 7px !important;
+    }
 }
 
 @media screen and (min-width:895px) {
     header span{
         display: none;
+    }
+
+    main img{
+        height: 550px ;
     }
 }
