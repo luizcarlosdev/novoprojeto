@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right,blue,violet);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 360px;
+    height: 440px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+form p#little-description{
+    color: grey;
+    margin: 13px 0px;
+}
+
+div#forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.block label,input{
+    display: block;
+}
+
+label{
+    margin: 5px 0px;
+    color: grey;
+}
+
+.block input[type=text],input[type=password],input[type=number]{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid lightgrey ;
+}
+
+div#checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#checkbox div#checked{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+}
+
+div#checkbox a{
+    text-decoration: none;
+    color: grey;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin: 8px 0px;
+}
+
+input[type=submit]{
+    padding: 10px;
+    font-size: 1rem;
+    background-color: black;
+    color: #fff;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    margin: 8px 0px;
+    cursor: pointer;
+}
+
+#q{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+span{
+    font-weight: 500;
+}
