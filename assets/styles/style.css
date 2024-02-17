@@ -237,10 +237,6 @@ main {
     min-width: none;
     display: block;
     margin: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    line-height: 2em;
     padding: 35px;
     overflow: hidden;
 }
@@ -263,6 +259,10 @@ main img {
 
 main p {
     text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0px;
+    font-size: 1rem;
+    line-height: 2em;
 }
 
 footer {

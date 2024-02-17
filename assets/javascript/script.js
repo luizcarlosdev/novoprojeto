@@ -8,6 +8,7 @@ const dark = document.querySelector("#buttond");
 function menu() {
     const menu = document.querySelector("aside#menu-lateral");
     menu.style.width = "250px";
+    menu.style.transition = "0.5s ease-in-out";
     corpo.style.overflowY = "hidden";
 }
 

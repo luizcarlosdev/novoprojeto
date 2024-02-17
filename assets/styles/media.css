@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:570px) {
     header {
         display: flex;
         flex-direction: row;
